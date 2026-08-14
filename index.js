@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const express = require('express')
 const app = express()
 const port = 8080;
@@ -30,7 +30,6 @@ app.get("/posts", (req,res) => {
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-=======
 const express = require("express");
 const app = express();
 
@@ -71,4 +70,3 @@ app.get("/*splat", (req,res) =>{
 //     console.log("Request Received");
 //     res.send("<h1>This is a response in HTML</h1> <ul><li>YOYOYOYO</li></ul>")//In res.send we can determine what should be shown to the client once his/her request is received.It can send and object,array,string anything as a response desired to our choice.
 // });
->>>>>>> 5c64d22f9dec034ac8ea2dfdfb75a9a8214e2a13
