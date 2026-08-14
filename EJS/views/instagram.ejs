@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+</head>
+<body>
+    <div class = "profile">
+    <center>
+    <h2><%= username %></h2>
+    <button>Follow</button>
+    <button>Message</button>
+    <h3>Accounts that follows you:</h3>
+    <% for(let name of followers) { %>
+        <li><%= name %></li>
+    <% } %>
+    </center>
+    </div>
+</body>
+</html>

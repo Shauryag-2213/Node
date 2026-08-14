@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "rest_class",
   "version": "1.0.0",
   "description": "",
@@ -13,5 +14,28 @@
   "dependencies": {
     "ejs": "^6.0.1",
     "express": "^5.2.1"
+=======
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Shauryag-2213/Node#readme",
+  "bugs": {
+    "url": "https://github.com/Shauryag-2213/Node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shauryag-2213/Node.git"
+  },
+  "license": "ISC",
+  "author": "Shaurya",
+  "type": "commonjs",
+  "main": "math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+>>>>>>> 5c64d22f9dec034ac8ea2dfdfb75a9a8214e2a13
   }
 }
