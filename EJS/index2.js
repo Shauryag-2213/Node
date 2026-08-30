@@ -42,7 +42,12 @@ app.get("/posts/:id/edit", (req, res) => {
     let {id} = req.params;
     let post = posts.find((p) => id === p.id)
     res.render("edit.ejs", {post});
-    req.redirect("/posts");
+})
+
+app.delete("/posts/:id", (req,res) => {
+    let {id} = req.params;
+    posts = posts.filter((p) => id !== p.id)
+    res.redirect("/posts");
 })
 
 app.get("/posts/:id", (req,res) => {
@@ -58,7 +63,7 @@ app.patch("/posts/:id", (req,res) => {
     let post = posts.find((p) => id === p.id)
     post.content = newContent;
     console.log(post);
-    res.send("Patch requests working");
+    res.redirect("/posts");
 })
 
 app.post("/posts", (req,res) => {
